@@ -99,3 +99,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# Latex auxiliary files
+*.aux
+*.out
+*.synctex.gz
+*homework.pdf
