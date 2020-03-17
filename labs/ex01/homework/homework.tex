@@ -36,14 +36,24 @@ Now, if for m=k is true we will prove that for m=k+1 is also true:
 \begin{align}
 	f\left(\sum_{i=1}^{k+1} \lambda_{i} x_{i}\right) & = f\left(\sum_{i=1}^{k} \lambda_{i} x_{i} + \lambda_{k+1}x_{k+1}\right) \\
 	& = f\left(\left(\sum_{j=1}^{k} \lambda_j \right) \left(\sum_{i=1}^{k} \frac{\lambda_{i}}{\left(\sum_{j=1}^{k} \lambda_j \right)} x_{i} \right) + \lambda_{k+1}x_{k+1}\right) \\
-	& \leq \left(\sum_{j=1}^{k} \lambda_j \right) f\left(\sum_{i=1}^{k} \frac{\lambda_{i}}{\left(\sum_{j=1}^{k} \lambda_j \right)} x_{i} \right) + \lambda_{k+1}f(x_{k+1}) \\ \label{use_cf_def_1}
-	& \leq \sum_{i=1}^{k} \lambda_{i} f(x_{i}) + \lambda_{k+1}f(x_{k+1}) \\ \label{use_induction_1}
+	& \leq \left(\sum_{j=1}^{k} \lambda_j \right) f\left(\sum_{i=1}^{k} \frac{\lambda_{i}}{\left(\sum_{j=1}^{k} \lambda_j \right)} x_{i} \right) + \lambda_{k+1}f(x_{k+1}) \label{use_cf_def_1} \\ 
+	& \leq \sum_{i=1}^{k} \lambda_{i} f(x_{i}) + \lambda_{k+1}f(x_{k+1}) \label{use_induction_1} \\ 
 	& = \sum_{i=1}^{k+1} \lambda_{i} f(x_{i})
 \end{align}
 where in \eqref{use_cf_def_1}, we have used the fact that f is a convex function and in \eqref{use_induction_1}, that Jensen's inequality holds for m=k.
 
 \subsection{Exercise 2}
 
+Since f is a convex function, we can apply the convexity definition on the cube boundary points. So, any point between each pair of corner points must have lower value. That includes the edges. We can pick any two points from the edges, and apply the convexity property to all points inside the cube. From that, it is trivial that the maximum value must be in one of the corners.
 
+Since the values of the function are bounded inside the cube, there cannot be any discontinuity. Say that in $f(x_d)$ there is a gap of size $K$ from negative to positive values, then between $f(x_d - 2\epsilon)$ and $f(x_d + 2\epsilon)$ it cannot be convex, because $f(x_d + \epsilon) > 0.25 f(x_d - 2\epsilon) + 0.75 f(x_d + 2\epsilon) \approx f(x_d + \epsilon) - 0.25K$.
+
+\subsection{Exercise 3}
+
+\subsection{Exercise 4}
+
+\subsection{Exercise 7}
+
+\subsection{Exercise 8}
 	
 \end{document}
