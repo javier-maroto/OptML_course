@@ -8,6 +8,7 @@
 \usepackage{listings}
 \usepackage{color}
 \usepackage{hyperref}
+\usepackage{amssymb}
 
 
 \renewcommand{\thesubfigure}{\roman{subfigure}}
@@ -29,9 +30,9 @@
 
 We will prove Jensen's inequality using induction.
 For $m=2$ it holds from the definition of \emph{convex function}:
-\begin{equation}
+\begin{equation*}
 f(\lambda x_1 + (1 - \lambda) x_2) \leq \lambda f(x_1) + (1 - \lambda) f(x_2)
-\end{equation}
+\end{equation*}
 Now, if for m=k is true we will prove that for m=k+1 is also true:
 \begin{align}
 	f\left(\sum_{i=1}^{k+1} \lambda_{i} x_{i}\right) & = f\left(\sum_{i=1}^{k} \lambda_{i} x_{i} + \lambda_{k+1}x_{k+1}\right) \\
@@ -50,10 +51,42 @@ Since the values of the function are bounded inside the cube, there cannot be an
 
 \subsection{Exercise 3}
 
+$||x - y||^{2}$ is twice differentiable. The Hessian matrix is $2\mathbb{I}$, which is positive definite. So the function is convex in all the domain.
+
+
 \subsection{Exercise 4}
+
+
+(i) 
+\begin{align*}
+	g(\beta x + (1 -\beta) y) & = \sum_{i} \lambda_{i}f_{i}(\beta x + (1 -\beta) y) \\ 
+	& \leq \sum_{i} \lambda_{i}(\beta f_{i}(x) + (1 - \beta) f_{i}(y)) \\
+	& = \beta \sum_{i} \lambda_{i} f_{i}(x) + (1 - \beta) \sum_{i} \lambda_{i} f_{i} (y)
+\end{align*}
+
+(ii) Since g(x) maps to the domain of f for all x, and f is convex, f(g(x)) is convex.
 
 \subsection{Exercise 7}
 
+\begin{align*}
+	\sum_{i} |\lambda_i x_i + (1 - \lambda_i) y_i| \leq \sum_{i} \lambda_i |x_i| + (1 - \lambda_i) |y_i|
+\end{align*}
+
 \subsection{Exercise 8}
+
+\begin{align*}
+	f(\lambda x + (1 - \lambda) y) & \leq f(\lambda x) + f((1 - \lambda) y) \\ & = \lambda f(x) + (1 - \lambda) f(y)
+\end{align*}
+the equality holds because $\lambda \in [0, 1]$
+
+\section{Gradient Descent}
+
+\subsection{Exercise 5}
+
+\subsection{Exercise 6}
+
+\subsection{Exercise 9}
+
+\subsection{Exercise 11}
 	
 \end{document}
