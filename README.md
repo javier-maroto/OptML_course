@@ -41,18 +41,18 @@ Nr | Date | Topic | Materials | Exercises
 #7 |  3.4. | Newton's Method & Quasi-Newton | [notes](../../raw/master/lecture_notes/lecture-notes.pdf), [slides](../../raw/master/slides/lecture07.pdf)| [lab07](../../tree/master/labs/ex07/)  
 . | 10.4. | `easter vacation` | | -
 . | 17.4. | `easter vacation` | | -
-#8 | 24.4. | Frank-Wolfe | 
-#9 |  1.5. | Coordinate Descent | 
-#10 | 8.5. | Duality, Gradient-free methods | 
-#11 | 15.5. | Applications | 
-#12 | 22.5. | Opt for ML in Practice | 
+#8 | 24.4. | Frank-Wolfe | notes, [slides](../../raw/master/slides/lecture08.pdf)| [lab08](../../tree/master/labs/ex08/)  
+#9 |  1.5. | Coordinate Descent | [notes](../../raw/master/lecture_notes/lecture-notes.pdf), [slides](../../raw/master/slides/lecture09.pdf) |[lab09](../../tree/master/labs/ex09/)
+#10 | 8.5. | Duality, Gradient-free, adaptive methods | notes, [slides](../../raw/master/slides/lecture10.pdf)| [lab10](../../tree/master/labs/ex10/)  
+#11 | 15.5. | Opt for ML in Practice | notes, [slides](../../raw/master/slides/lecture11.pdf)| O&A  
+#12 | 22.5. | Applications | 
 #13 | 29.5. | `Mini-Project week` | | 
 
 ### Exercises:
 The [weekly exercises](../../tree/master/labs/) consist of a mix of theoretical and practical `Python` exercises for the corresponding topic each week (starting week 2). Solutions to theory exercises are available [here](../../tree/master/lecture_notes), and for practicals in the lab folder.
 
 ### Project:
-A `mini-project` will focus on the practical implementation: Here we encourage students to investigate the real-world performance of one of the studied optimization algorithms or variants, helping to provide solid empirical evidence for some behaviour aspects on a real machine-learning task. The project is mandatory and done in groups of 3 students. It will count 20% to the final grade. Project reports (3 page PDF) are due May 29th. Here is a [detailed project description](../../raw/master/labs/mini-project/miniproject_description.pdf).
+A `mini-project` will focus on the practical implementation: Here we encourage students to investigate the real-world performance of one of the studied optimization algorithms or variants, helping to provide solid empirical evidence for some behaviour aspects on a real machine-learning task. The project is mandatory and done in groups of 3 students. It will count 20% to the final grade. Project reports (3 page PDF) are due June 12th. Here is a [detailed project description](../../raw/master/labs/mini-project/miniproject_description.pdf).
 
 ### Assessment:
 Final written exam in exam session, summer 2020. _Format: Closed book. Theoretical questions similar to exercises. You are allowed to bring one cheat sheet (A4 size paper, both sides can be used), either handwritten or 11 point minimum font size._
